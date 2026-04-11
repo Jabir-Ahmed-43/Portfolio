@@ -1,0 +1,17 @@
+.normal{
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.p
+{
+    font-family: 'Lato';
+}
+
+*{
+    color: whitesmoke;
+}
