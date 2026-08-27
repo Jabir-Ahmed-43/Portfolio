@@ -1,53 +1,59 @@
-import { useState } from 'react';
-import { ExternalLink, ShoppingBag, MessageSquare, BarChart3 } from 'lucide-react';
-import { Github } from './Icons';
+import { Code2, ExternalLink, University } from "lucide-react";
+import { useState } from "react";
+import { Github } from "./Icons";
 
 export const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ['All', 'Full Stack', 'Real-time', 'Dashboard'];
+  const categories = ["All", "Full Stack", "Real-time", "Dashboard"];
 
   const projectsList = [
     {
-      title: 'ShopSphere',
-      category: 'Full Stack',
-      tag: 'Full Stack',
-      icon: <ShoppingBag size={24} className="text-accent" />,
-      description: 'A full-featured e-commerce platform with product management, cart operations, Stripe payment gateway, and a fully administrative dashboard.',
-      stack: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
-      demoUrl: '#',
-      githubUrl: '#',
+      title: "OJHub",
+      category: "Real-time",
+      tag: "Real-time",
+      icon: <Code2 size={24} className="text-accent" />,
+      description:
+        "Developed a web-based online judge platform for programming practice, automated code evaluation, and competitive programming contests.",
+      stack: ["React", "Node.js", "Tailwind", "MongoDB", "Firebase", "Judge0"],
+      demoUrl: "#",
+      githubUrl: "#",
     },
     {
-      title: 'Talkr',
-      category: 'Real-time',
-      tag: 'Real-time',
-      icon: <MessageSquare size={24} className="text-accent" />,
-      description: 'A real-time group chat application featuring private channels, file sharing, and JWT-based user authentication. Uses WebSockets for instant message synchronization.',
-      stack: ['Next.js', 'Socket.io', 'PostgreSQL', 'JWT'],
-      demoUrl: '#',
-      githubUrl: '#',
+      title: "Hall Management System",
+      category: "Real-time",
+      tag: "Real-time",
+      icon: <University size={24} className="text-accent" />,
+      description:
+        "A relational database-focused project designed to manage hall-related activities efficiently. Currently working on integrating the system with web technologies for improved accessibility and functionality.",
+      stack: ["React.js", "Tailwind", "MySQL", "Firebase"],
+      demoUrl: "#",
+      githubUrl: "#",
     },
-    {
-      title: 'AnalyticsPulse',
-      category: 'Dashboard',
-      tag: 'Dashboard',
-      icon: <BarChart3 size={24} className="text-accent" />,
-      description: 'A responsive analytics dashboard for visualizing website traffic patterns, visitor counts, and user behavioral data. Features interactive chart rendering and CSV data export.',
-      stack: ['React', 'Recharts', 'Express', 'Tailwind'],
-      demoUrl: '#',
-      githubUrl: '#',
-    },
+    // {
+    //   title: "AnalyticsPulse",
+    //   category: "Dashboard",
+    //   tag: "Dashboard",
+    //   icon: <BarChart3 size={24} className="text-accent" />,
+    //   description:
+    //     "A responsive analytics dashboard for visualizing website traffic patterns, visitor counts, and user behavioral data. Features interactive chart rendering and CSV data export.",
+    //   stack: ["React", "Recharts", "Express", "Tailwind"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    // },
   ];
 
-  const filteredProjects = activeFilter === 'All'
-    ? projectsList
-    : projectsList.filter(project => project.category === activeFilter);
+  const filteredProjects =
+    activeFilter === "All"
+      ? projectsList
+      : projectsList.filter((project) => project.category === activeFilter);
 
   return (
-    <section id="projects" className="py-20 md:py-28 bg-navy text-white transition-colors duration-300">
+    <section
+      id="projects"
+      className="py-20 md:py-28 bg-navy text-white transition-colors duration-300"
+    >
       <div className="max-w-6xl mx-auto px-6">
-        
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-accent uppercase mb-3">
@@ -58,7 +64,9 @@ export const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-sm md:text-base text-gray-400 max-w-xl">
-              A selection of projects that showcase my development capabilities — from full-stack web applications to complex user interface experiments.
+              A selection of projects that showcase my development capabilities
+              — from full-stack web applications to complex user interface
+              experiments.
             </p>
           </div>
 
@@ -69,8 +77,8 @@ export const Projects = () => {
                 onClick={() => setActiveFilter(cat)}
                 className={`text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-custom transition-all duration-200 ${
                   activeFilter === cat
-                    ? 'bg-accent text-navy'
-                    : 'bg-navy-mid hover:bg-navy-light text-gray-300 hover:text-white border border-accent/15'
+                    ? "bg-accent text-navy"
+                    : "bg-navy-mid hover:bg-navy-light text-gray-300 hover:text-white border border-accent/15"
                 }`}
               >
                 {cat}
@@ -137,7 +145,6 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

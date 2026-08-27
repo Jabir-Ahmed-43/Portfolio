@@ -29,7 +29,7 @@ developer.grow();`,
   ],
   currentlyLearning: [
     "Next.js",
-    "Tailwind v4 features"
+    "TypeScript"
   ]
 };`,
   };
@@ -192,7 +192,7 @@ developer.grow();`,
             <div className="grid grid-cols-3 border-t border-accent/15 py-4 bg-navy-mid/20">
               <div className="text-center border-r border-accent/10">
                 <span className="block font-serif text-xl md:text-2xl text-accent font-bold">
-                  12+
+                  3+
                 </span>
                 <span className="text-[10px] uppercase tracking-wider text-gray-400">
                   Projects
@@ -200,7 +200,7 @@ developer.grow();`,
               </div>
               <div className="text-center border-r border-accent/10">
                 <span className="block font-serif text-xl md:text-2xl text-accent font-bold">
-                  3.85
+                  3.56
                 </span>
                 <span className="text-[10px] uppercase tracking-wider text-gray-400">
                   CGPA
