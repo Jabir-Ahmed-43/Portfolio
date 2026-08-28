@@ -29,7 +29,7 @@ export const Experience = () => {
       organization: "State University of Technology",
       icon: <GraduationCap size={16} className="text-accent" />,
       highlights: [
-        "Maintained a cumulative GPA of 3.85 / 4.00.",
+        "Maintained a cumulative GPA of 3.56 / 4.00.",
         "Honored with placement on the Dean's List for academic excellence.",
         "Served as Web Technologies Student Club Lead, organizing workshops and tech talks.",
       ],

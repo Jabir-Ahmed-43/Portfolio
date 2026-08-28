@@ -118,7 +118,8 @@ export const About = () => {
 
             <div className="flex">
               <a
-                href="#contact"
+                href="/resume.pdf"
+                download="Jabir_Ahmed_Resume.pdf"
                 className="inline-flex items-center bg-navy hover:bg-navy-mid text-accent-light dark:bg-accent dark:text-navy dark:hover:bg-accent-light font-bold text-sm tracking-wider uppercase px-8 py-3.5 rounded-custom transition-all duration-200"
               >
                 Download Resume

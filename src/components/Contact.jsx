@@ -80,7 +80,7 @@ export const Contact = () => {
     {
       label: "Resume",
       value: "Download PDF",
-      href: "#",
+      href: "/resume.pdf",
       icon: <FileText size={18} className="text-accent" />,
     },
   ];

@@ -12,6 +12,7 @@ export const Projects = () => {
       title: "OJHub",
       category: "Real-time",
       tag: "Real-time",
+      image: "/ojhub-landing-page.png",
       icon: <Code2 size={24} className="text-accent" />,
       description:
         "Developed a web-based online judge platform for programming practice, automated code evaluation, and competitive programming contests.",
@@ -23,10 +24,11 @@ export const Projects = () => {
       title: "Hall Management System",
       category: "Real-time",
       tag: "Real-time",
+
       icon: <University size={24} className="text-accent" />,
       description:
         "A relational database-focused project designed to manage hall-related activities efficiently. Currently working on integrating the system with web technologies for improved accessibility and functionality.",
-      stack: ["React.js", "Tailwind", "MySQL", "Firebase"],
+      stack: ["React.js", "Tailwind", "MySQL"],
       demoUrl: "#",
       githubUrl: "#",
     },
@@ -94,7 +96,9 @@ export const Projects = () => {
               className="group flex flex-col bg-navy-mid/40 border border-accent/15 rounded-custom-lg overflow-hidden hover:border-accent/50 hover:-translate-y-1.5 transition-all duration-300"
             >
               <div className="h-44 bg-gradient-to-br from-navy-mid to-navy-light flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img src={project.image} alt="" />
+                </div>
                 <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-accent/5 rounded-full blur-xl group-hover:bg-accent/10 transition-colors"></div>
 
                 <div className="p-4 rounded-full bg-navy/60 border border-accent/20 transition-transform duration-300 group-hover:scale-110">
