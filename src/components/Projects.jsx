@@ -18,19 +18,20 @@ export const Projects = () => {
         "Developed a web-based online judge platform for programming practice, automated code evaluation, and competitive programming contests.",
       stack: ["React", "Node.js", "Tailwind", "MongoDB", "Firebase", "Judge0"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Jabir-Ahmed-43/OJHub",
     },
     {
       title: "Hall Management System",
-      category: "Real-time",
-      tag: "Real-time",
+      category: "Dashboard",
+      image: "/images/Hall Management.jpeg",
+      tag: "Dashboard",
 
       icon: <University size={24} className="text-accent" />,
       description:
         "A relational database-focused project designed to manage hall-related activities efficiently. Currently working on integrating the system with web technologies for improved accessibility and functionality.",
       stack: ["React.js", "Tailwind", "MySQL"],
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Jabir-Ahmed-43/Smart-Hall-Management",
     },
     // {
     //   title: "AnalyticsPulse",
