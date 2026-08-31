@@ -37,31 +37,31 @@ developer.grow();`,
   return (
     <section
       id="hero"
-      className="min-h-screen relative overflow-hidden bg-gradient-to-br from-navy via-navy-mid to-[#1e3a5f] pt-32 pb-20 px-6"
+      className="min-h-screen relative overflow-hidden bg-gradient-to-br from-cream via-[#f5eedc] to-accent-pale dark:from-navy dark:via-navy-mid dark:to-[#1e3a5f] pt-32 pb-20 px-6 transition-colors duration-300"
     >
-      <div className="absolute inset-0 z-0 opacity-20">
-        <div className="absolute -top-[10%] -right-[5%] w-[500px] h-[500px] rounded-full border border-accent/30 animate-pulse-slow"></div>
-        <div className="absolute top-[20%] right-[10%] w-[300px] h-[300px] rounded-full border border-accent/20"></div>
-        <div className="absolute bottom-[10%] -left-[10%] w-[400px] h-[400px] rounded-full border border-accent/15 animate-pulse-slow"></div>
+      <div className="absolute inset-0 z-0 opacity-35 dark:opacity-20">
+        <div className="absolute -top-[10%] -right-[5%] w-[500px] h-[500px] rounded-full border border-[#7a5c1e]/20 dark:border-accent/30 animate-pulse-slow"></div>
+        <div className="absolute top-[20%] right-[10%] w-[300px] h-[300px] rounded-full border border-[#7a5c1e]/15 dark:border-accent/20"></div>
+        <div className="absolute bottom-[10%] -left-[10%] w-[400px] h-[400px] rounded-full border border-[#7a5c1e]/10 dark:border-accent/15 animate-pulse-slow"></div>
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         <div className="lg:col-span-6 flex flex-col justify-center">
-          <div className="inline-flex items-center gap-3 text-xs md:text-sm font-semibold tracking-widest text-accent uppercase mb-6 animate-fade-in">
-            <span className="w-8 h-[1px] bg-accent"></span>
+          <div className="inline-flex items-center gap-3 text-xs md:text-sm font-semibold tracking-widest text-[#7a5c1e] dark:text-accent uppercase mb-6 animate-fade-in">
+            <span className="w-8 h-[1px] bg-[#7a5c1e] dark:bg-accent"></span>
             Available for Internship &amp; Opportunities
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight mb-4">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-navy dark:text-white font-bold leading-tight mb-4">
             Jabir <br className="hidden md:inline" />
-            <span className="italic text-accent-light">Ahmed</span>
+            <span className="italic text-[#7a5c1e] dark:text-accent-light">Ahmed</span>
           </h1>
 
-          <p className="text-lg md:text-xl font-light text-gray-300 tracking-wide mb-6">
+          <p className="text-lg md:text-xl font-light text-text-muted dark:text-gray-300 tracking-wide mb-6">
             CSE Undergraduate &nbsp;·&nbsp; Web Developer
           </p>
 
-          <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-8 max-w-xl">
+          <p className="text-base md:text-lg text-text-muted dark:text-gray-400 leading-relaxed mb-8 max-w-xl">
             I build thoughtful, performant web experiences — from clean
             interfaces to scalable backends. Currently pursuing my BSc in
             Computer Science & Engineering.
@@ -77,7 +77,7 @@ developer.grow();`,
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center border border-accent/40 hover:border-accent bg-transparent hover:bg-accent/10 text-accent-light font-medium text-sm tracking-wider uppercase px-8 py-3.5 rounded-custom transition-all duration-200"
+              className="inline-flex items-center border border-[#7a5c1e]/40 hover:border-[#7a5c1e] dark:border-accent/40 dark:hover:border-accent bg-transparent hover:bg-[#7a5c1e]/10 dark:hover:bg-accent/10 text-[#7a5c1e] dark:text-accent-light font-medium text-sm tracking-wider uppercase px-8 py-3.5 rounded-custom transition-all duration-200"
             >
               Get In Touch
             </a>

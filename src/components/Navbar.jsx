@@ -18,13 +18,21 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
       setIsScrolled(window.scrollY > 50);
 
       const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'contact'];
-      const scrollPosition = window.scrollY + 100;
+      
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50;
+      if (isAtBottom) {
+        setActiveSection('contact');
+        return;
+      }
+
+      const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
+          const rect = el.getBoundingClientRect();
+          const top = rect.top + window.scrollY;
+          const height = rect.height;
           if (scrollPosition >= top && scrollPosition < top + height) {
             setActiveSection(section);
             break;

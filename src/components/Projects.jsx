@@ -54,19 +54,19 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 md:py-28 bg-navy text-white transition-colors duration-300"
+      className="py-20 md:py-28 bg-white dark:bg-navy text-navy dark:text-white transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-accent uppercase mb-3">
-              <span className="w-6 h-[1px] bg-accent"></span>
+            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#7a5c1e] dark:text-accent uppercase mb-3">
+              <span className="w-6 h-[1px] bg-[#7a5c1e] dark:bg-accent"></span>
               Work
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl text-white font-bold leading-tight mb-3">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy dark:text-white font-bold leading-tight mb-3">
               Featured Projects
             </h2>
-            <p className="text-sm md:text-base text-gray-400 max-w-xl">
+            <p className="text-sm md:text-base text-text-muted dark:text-gray-400 max-w-xl">
               A selection of projects that showcase my development capabilities
               — from full-stack web applications to complex user interface
               experiments.
@@ -81,7 +81,7 @@ export const Projects = () => {
                 className={`text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-custom transition-all duration-200 ${
                   activeFilter === cat
                     ? "bg-accent text-navy"
-                    : "bg-navy-mid hover:bg-navy-light text-gray-300 hover:text-white border border-accent/15"
+                    : "bg-accent-pale dark:bg-navy-mid hover:bg-accent/20 dark:hover:bg-navy-light text-[#7a5c1e] dark:text-gray-300 hover:text-[#5a4313] dark:hover:text-white border border-accent/30 dark:border-accent/15"
                 }`}
               >
                 {cat}
@@ -94,32 +94,32 @@ export const Projects = () => {
           {filteredProjects.map((project, idx) => (
             <div
               key={idx}
-              className="group flex flex-col bg-navy-mid/40 border border-accent/15 rounded-custom-lg overflow-hidden hover:border-accent/50 hover:-translate-y-1.5 transition-all duration-300"
+              className="group flex flex-col bg-cream/40 dark:bg-navy-mid/40 border border-accent/20 dark:border-accent/15 rounded-custom-lg overflow-hidden hover:border-accent/50 dark:hover:border-accent/50 hover:shadow-md hover:-translate-y-1.5 transition-all duration-300"
             >
-              <div className="h-44 bg-gradient-to-br from-navy-mid to-navy-light flex items-center justify-center relative overflow-hidden">
+              <div className="h-44 bg-gradient-to-br from-accent-pale to-cream dark:from-navy-mid dark:to-navy-light flex items-center justify-center relative overflow-hidden">
                 {project.image && (
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover opacity-85 dark:opacity-60 group-hover:scale-105 transition-transform duration-300"
                   />
                 )}
                 <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-accent/5 rounded-full blur-xl group-hover:bg-accent/10 transition-colors"></div>
 
-                <div className="relative z-10 p-4 rounded-full bg-navy/60 border border-accent/20 transition-transform duration-300 group-hover:scale-110">
+                <div className="relative z-10 p-4 rounded-full bg-white/80 dark:bg-navy/60 border border-accent/20 transition-transform duration-300 group-hover:scale-110">
                   {project.icon}
                 </div>
 
-                <span className="absolute top-4 left-4 z-10 bg-accent text-navy text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 z-10 bg-[#7a5c1e] text-white dark:bg-accent dark:text-navy text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
                   {project.tag}
                 </span>
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-serif text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
+                <h3 className="font-serif text-xl font-bold text-navy dark:text-white mb-2 group-hover:text-[#7a5c1e] dark:group-hover:text-accent transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-xs md:text-sm text-gray-400 leading-relaxed mb-6 flex-1">
+                <p className="text-xs md:text-sm text-text-muted dark:text-gray-400 leading-relaxed mb-6 flex-1">
                   {project.description}
                 </p>
 
@@ -127,24 +127,24 @@ export const Projects = () => {
                   {project.stack.map((tech, tIdx) => (
                     <span
                       key={tIdx}
-                      className="text-[10px] font-medium px-2.5 py-1 rounded-full bg-accent/10 text-accent-light border border-accent/25"
+                      className="text-[10px] font-medium px-2.5 py-1 rounded-full bg-accent-pale dark:bg-accent/10 text-[#7a5c1e] dark:text-accent-light border border-accent/30 dark:border-accent/25"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex gap-4 pt-4 border-t border-accent/10">
+                <div className="flex gap-4 pt-4 border-t border-accent/20 dark:border-accent/10">
                   <a
                     href={project.demoUrl}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-accent hover:text-accent-light transition-colors"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#7a5c1e] hover:text-[#5a4313] dark:text-accent dark:hover:text-accent-light transition-colors"
                   >
                     <ExternalLink size={14} />
                     <span>Live Demo</span>
                   </a>
                   <a
                     href={project.githubUrl}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-accent hover:text-accent-light transition-colors"
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-[#7a5c1e] hover:text-[#5a4313] dark:text-accent dark:hover:text-accent-light transition-colors"
                   >
                     <Github size={14} />
                     <span>GitHub</span>
