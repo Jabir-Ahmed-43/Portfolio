@@ -42,6 +42,7 @@ export const Skills = () => {
       icon: <Cpu size={22} className="text-accent-light dark:text-accent" />,
       skills: [
         { name: "Git & GitHub", isAccent: true },
+        { name: "Next.js", isAccent: true },
         { name: "VS Code", isAccent: true },
         { name: "Postman", isAccent: true },
         { name: "Docker", isAccent: false },

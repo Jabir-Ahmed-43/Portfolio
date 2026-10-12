@@ -21,6 +21,18 @@ export const Projects = () => {
       githubUrl: "https://github.com/Jabir-Ahmed-43/OJHub",
     },
     {
+      title: "Savor Restaurant",
+      category: "Real-time",
+      tag: "Real-time",
+      image: "/images/Savor-rest.png",
+      icon: <Code2 size={24} className="text-accent" />,
+      description:
+        "Savor Restaurant is a modern, responsive restaurant website built with Next.js and Tailwind CSS. It provides an intuitive user experience for exploring food menus, viewing food details, and making table reservations. The project focuses on clean UI design, responsive layouts, and scalable web development, with plans to integrate MongoDB, authentication, and online ordering features.",
+      stack: ["Next.js", "Tailwind", "MongoDB", "Better Auth"],
+      demoUrl: "https://savor-restaurant-theta.vercel.app/",
+      githubUrl: "https://github.com/Jabir-Ahmed-43/Savor-restaurant",
+    },
+    {
       title: "Hall Management System",
       category: "Dashboard",
       image: "/images/Hall Management.jpeg",
