@@ -22,6 +22,8 @@ export const Skills = () => {
         { name: "Node.js", isAccent: true },
         { name: "Express.js", isAccent: true },
         { name: "REST APIs", isAccent: true },
+        { name: "Firebase", isAccent: true },
+        { name: "Better Auth", isAccent: true },
       ],
     },
     {
