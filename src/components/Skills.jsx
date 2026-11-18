@@ -35,7 +35,7 @@ export const Skills = () => {
         { name: "MongoDB", isAccent: true },
         { name: "Firebase", isAccent: true },
         { name: "MySQL", isAccent: true },
-        { name: "PostgreSQL", isAccent: false },
+        { name: "PostgreSQL", isAccent: true },
         { name: "Redis", isAccent: false },
       ],
     },

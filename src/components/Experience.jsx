@@ -16,7 +16,7 @@ export const Experience = () => {
     {
       date: "08 December 2024",
       role: "Onsite Programming Contest",
-      organization: "Various Projects — GitHub",
+      organization: "Leading University, Sylhet",
       icon: <Code2 size={16} className="text-accent" />,
       highlights: [
         "Had the opportunity to participate in the first IUJPC Programming Contest. ",
@@ -24,14 +24,13 @@ export const Experience = () => {
       ],
     },
     {
-      date: "2022 — Present",
+      date: "2023 — Present",
       role: "B.Sc. in Computer Science & Engineering",
-      organization: "State University of Technology",
+      organization: "Sylhet Engineering College",
       icon: <GraduationCap size={16} className="text-accent" />,
       highlights: [
         "Maintained a cumulative GPA of 3.56 / 4.00.",
-        "Honored with placement on the Dean's List for academic excellence.",
-        "Served as Web Technologies Student Club Lead, organizing workshops and tech talks.",
+        "Served as ACM Lab Coordinator, organizing workshops and programming contests.",
       ],
     },
   ];

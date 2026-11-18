@@ -9,27 +9,29 @@ export const Hero = () => {
   name: "Jabir Ahmed",
   degree: "B.Sc. in CSE",
   status: "open_to_internships",
-  focus: ["React", "Tailwind", "Node.js"],
+  focus: ["Typescript", "Next.js", "Postgres"],
   passion: "clean_code",
   grow: () => "always learning..."
 };
 
 developer.grow();`,
     skills: `const skills = {
-  frontend: ["React.js", "Tailwind"],
-  backend: ["Node.js", "Express.js"],
-  databases: ["MongoDB"],
+  frontend: ["React.js", "Next.js"],
+  backend: ["Node.js", "Express.js",
+            "Typescript.js"],
+  databases: ["MongoDB", "Supabase",
+              "Postgres"],
   devops: ["Git", "Linux"]
 };`,
     interests: `const interests = {
   hobbies: [
-    "Open Source", 
-    "Hackathons", 
+    "Open Source",
+    "Hackathons",
     "Mentoring peers"
   ],
   currentlyLearning: [
-    "Next.js",
     "TypeScript"
+    "Docker",
   ]
 };`,
   };
@@ -54,7 +56,9 @@ developer.grow();`,
 
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-navy dark:text-white font-bold leading-tight mb-4">
             Jabir <br className="hidden md:inline" />
-            <span className="italic text-[#7a5c1e] dark:text-accent-light">Ahmed</span>
+            <span className="italic text-[#7a5c1e] dark:text-accent-light">
+              Ahmed
+            </span>
           </h1>
 
           <p className="text-lg md:text-xl font-light text-text-muted dark:text-gray-300 tracking-wide mb-6">

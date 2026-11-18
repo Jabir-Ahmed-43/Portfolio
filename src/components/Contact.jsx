@@ -392,7 +392,8 @@ export const Contact = () => {
                     <span>What can I help you with?</span>
                   </label>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                    {TOPICS.map((topic) => (
+                    {/* //! Topic  */}
+                    {/* {TOPICS.map((topic) => (
                       <button
                         key={topic.id}
                         type="button"
@@ -405,7 +406,7 @@ export const Contact = () => {
                       >
                         {topic.label}
                       </button>
-                    ))}
+                    ))} */}
                   </div>
                 </div>
 
@@ -598,13 +599,13 @@ export const Contact = () => {
                   )}
                 </button>
 
-                <p className="text-center text-[11px] text-text-muted dark:text-gray-400">
+                {/* <p className="text-center text-[11px] text-text-muted dark:text-gray-400">
                   Messages are sent directly to{" "}
                   <span className="font-mono text-navy dark:text-cream">
                     {RECIPIENT_EMAIL}
                   </span>
                   . No spam, ever.
-                </p>
+                </p> */}
               </form>
             )}
           </div>

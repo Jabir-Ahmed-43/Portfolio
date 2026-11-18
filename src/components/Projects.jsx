@@ -84,8 +84,8 @@ export const Projects = () => {
               experiments.
             </p>
           </div>
-
-          <div className="flex flex-wrap gap-2">
+          {/* //! Featured Project */}
+          {/* <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -99,7 +99,7 @@ export const Projects = () => {
                 {cat}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
